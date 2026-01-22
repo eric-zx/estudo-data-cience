@@ -11,4 +11,18 @@ O weights (pesos) serve para você controlar as chances (probabilidades) de cada
 
 Sem o weights, o Python faz um sorteio justo, onde todo mundo tem a mesma chance. Com o weights, você "vicia" o sorteio, tornando alguns itens mais prováveis de aparecerem do que outros.
 
+
 O k é o parâmetro que diz ao Python quantas vezes ele deve realizar o sorteio, ou seja, o número de elementos que você quer que retornem da lista.
+
+O math é um módulo (uma biblioteca) que já vem instalado por padrão no Python. Ele contém uma série de ferramentas matemáticas prontas que vão muito além das operações básicas como soma e subtração.
+
+Pense nele como uma calculadora científica superpotente integrada ao seu código.
+Para que serve o math?
+
+Enquanto o Python "puro" consegue fazer contas simples (+, −, ∗, /), o math é necessário quando você precisa de:
+
+    Arredondamentos Específicos: Como o ceil (teto) e o floor (chão).
+
+    Constantes Matemáticas: Como o valor de π (Pi) ou e (Euler).
+
+    Funções Avançadas: Raiz quadrada, logaritmos, seno, cosseno e fatoriais.
