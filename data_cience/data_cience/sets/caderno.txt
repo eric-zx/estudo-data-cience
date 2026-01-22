@@ -1,0 +1,4 @@
+o que são SETS?
+
+é uma coleção de dados não ordenadas e sem duplicadas, e também é built-in que são os dicionarios, listas e tuplas.
+

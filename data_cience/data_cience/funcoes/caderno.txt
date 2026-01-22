@@ -1,0 +1,14 @@
+from random: Você está dizendo ao Python: "Vá até a biblioteca de funções aleatórias (random)".
+import choices: "E traga para o meu código apenas a função choices".
+
+O que a função choices faz?
+
+Diferente da função choice (no singular), que escolhe apenas um item, a choices (no plural) permite que você escolha vários itens de uma lista de uma só vez.
+
+Além disso, ela tem um "superpoder": você pode definir pesos (probabilidades) para cada item.
+
+O weights (pesos) serve para você controlar as chances (probabilidades) de cada item ser escolhido.
+
+Sem o weights, o Python faz um sorteio justo, onde todo mundo tem a mesma chance. Com o weights, você "vicia" o sorteio, tornando alguns itens mais prováveis de aparecerem do que outros.
+
+O k é o parâmetro que diz ao Python quantas vezes ele deve realizar o sorteio, ou seja, o número de elementos que você quer que retornem da lista.

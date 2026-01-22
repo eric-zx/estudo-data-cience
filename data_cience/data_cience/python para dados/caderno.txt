@@ -1,0 +1,39 @@
+*MANIPULAÇÃO DE LISTAS
+
+estrutura:
+
+nome_lista = []
+
+#Função,O que faz,Exemplo
+#append(),Adiciona no fim,lista.append('item')
+#insert(),Adiciona em qualquer lugar,"lista.insert(0, 'item')"
+#remove(),Remove pelo nome,lista.remove('item')
+#pop(),Remove pela posição,lista.pop(2)
+#len(),Dá o tamanho da lista,len(lista)
+#sort(),Ordena os itens,lista.sort()
+#clear(),Apaga a lista inteira,lista.clear()
+
+*DICIONÁRIOS
+
+Estruturas:
+
+nome = {
+    chave:x,
+    chave1:y
+}
+items()
+retorna chaves e valores do dicionário
+
+keys()
+retorna as chaves do dicionário
+
+values()
+retorna os valoes das chaves, apenas
+
+
+
+
+
+
+
+
