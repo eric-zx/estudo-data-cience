@@ -1,0 +1,68 @@
+Caderno de Estudos: Análise de Notas com Python
+
+Este script realiza o cálculo de média aritmética utilizando dicionários, laços de repetição e funções nativas de matemática.
+1. Importação de Módulos
+Python
+
+import math
+
+    import math: O Python possui funções básicas, mas operações específicas (como arredondar para baixo ou para cima) estão no módulo math. Ao importá-lo,
+     você ganha acesso a ferramentas matemáticas avançadas.
+
+2. Estrutura de Dados: Dicionário (dict)
+Python
+
+notas = {
+    '1 trimestre': 8.5,
+    '2 trimestre': 9.5,
+    '3 trimestre': 7.0
+}
+
+    O que é: Um dicionário armazena dados em pares de Chave ('1 trimestre') e Valor (8.5).
+
+    Vantagem em Data Science: É excelente para rotular dados. Em vez de ter apenas números soltos, você sabe exatamente a que cada número se refere.
+
+3. Funções de Agregação e Métodos
+Python
+
+somatoria = sum(notas.values())
+qtd_notas = len(notas)
+
+    .values(): É um método que "extrai" apenas os números do dicionário, ignorando os nomes dos trimestres.
+
+    sum(): Uma função nativa que soma todos os itens de uma lista ou coleção numérica.
+
+    len(): Abreviação de length (comprimento). Conta quantos itens existem no dicionário (neste caso, 3).
+
+4. O Laço de Repetição (for)
+Python
+
+for nota in notas.values():
+    soma += nota
+
+    Variável de Controle (nota): É um nome temporário para o valor que está sendo processado no momento.
+
+    Operador +=: Isso é um acumulador. Ele diz ao Python: "pegue o valor atual de soma e adicione a nota a ele". É o mesmo que escrever soma = soma + nota.
+
+5. Cálculo e Arredondamento
+Python
+
+media = somatoria / qtd_notas
+media = round(media)
+
+    Divisão (/): No Python, a divisão de dois números sempre resulta em um float (número decimal).
+
+    round(): Diferente do math.floor (que puxa para baixo), o round() segue a regra matemática padrão:
+
+        Se a decimal for .5 ou maior, ele arredonda para cima.
+
+        Se for menor que .5, ele arredonda para baixo.
+
+        Nota: No seu código, 25 / 3 = 8.33. O round transformará isso em 8.
+
+Resumo das Funções Utilizadas
+Função	O que faz?	Exemplo no código
+sum()	Soma elementos	sum([8.5, 9.5, 7.0]) -> 25.0
+len()	Conta elementos	len(notas) -> 3
+round()	Arredonda p/ o mais próximo	round(8.33) -> 8
+print()	Exibe no terminal	print(media)
